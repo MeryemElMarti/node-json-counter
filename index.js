@@ -44,7 +44,7 @@ app.get("/", async (req, res) => {
         const serverIP = req.socket.localAddress;
     // Démarrage serveur
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
     // IP client (utile derrière proxy Azure)
   const clientIP =
