@@ -15,8 +15,7 @@ jobs:
         with:
           node-version: '22'
       - run: npm install
-      - run: zip -r app.zip
-      - name: 🚀 Déploiement sur Azure
+      - run: zip -r app.zip .
       - uses: azure/webapps-deploy@v3
         with:
           app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
